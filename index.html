@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='ru'>
+  <head>
+    <meta charset="UTF-8">
+    <title>Абитуриенту</title>
+    <link rel='stylesheet' href='css/style.css'>
+  </head>
+  <body>
+    <div id='fullpage'>
+
+      <div class = 'head'>
+
+        <button id='toRes' class = 'headButton'>Мои результаты</button>
+        <button class = 'headButton'>Институты</button>
+        <a href='https://www.sstu.ru' class = 'headButton'>СГТУ</a>
+
+      </div>
+
+      <div id='block1' class='block'>
+
+          <img src='media/hi.png' class = 'emoji'>
+          <div class='bubble', id ='dialogue'></div>   
+             
+      </div>
+
+      <div id='block2' class='block'>
+
+        <div id="questionnaire"></div>
+
+      </div>
+
+      <div id='block3' class='block'>
+        <div class='end' id ='res'></div>
+      </div>
+
+      <div id='block4' class='block'>
+        <div class = "res">
+          <p style="font-size: 46px; margin-bottom: 0px; color: #993366;">Введите ваш ID</p>
+          <p style="font-size: 14px;margin-top: 0px; color: #612e47;">(ID был присвоен после прохождения опроса)</p>
+          <form class="findRes">
+            <input type="text" class="id">
+            <input class="findResById" type="submit" value="Узнать результаты">
+          </form>  
+        </div>
+      </div>
+
+    </div>
+
+    <script src='js/app.js'></script>
+
+  </body>
+</html>

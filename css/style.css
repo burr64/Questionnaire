@@ -1,0 +1,209 @@
+body {
+  font-family: Intro;
+  font-size: 60px;
+  background: #ffc2d8;
+  background: -moz-linear-gradient(45deg,  #ffc2d8 0%, #fea1be 100%);
+  background: -webkit-linear-gradient(45deg,  #ffc2d8 0%,#fea1be 100%);
+  background: linear-gradient(45deg,  #ffc2d8 0%,#fea1be 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc2d8', endColorstr='#fea1be',GradientType=1 );
+  
+  overflow: hidden;
+  /* Когда всё сделаю скрою строку */
+
+  background-size: cover;
+}
+
+@font-face {
+  font-family: 'Intro';
+  src: local('Intro'), url('fonts/intro.woff2') format('woff2'), url('fonts/intro.woff') format('woff'), url('fonts/intro.ttf') format('truetype');
+}
+
+.block{
+  height: 100vh;
+}
+
+/* -------------- ГОЛОВА -------------- */
+
+.head{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headButton{
+  font-family: Intro;
+  background:none;
+  border:none;
+  cursor: pointer;
+  margin-top: 1%;
+  padding-right: 3%;
+  font-size: 50%;
+  /* color: #993366; */
+  color: aliceblue;
+}
+
+/* ------------------------------------ */
+
+/* --------------- БЛОК 1 --------------*/
+
+.emoji{
+  float: left;
+  margin-top: 7%;
+  margin-left: 8%;
+  width: 30%;
+}
+
+.bubble{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  position: absolute;                  
+  bottom:0;   
+  margin-left: 50%;
+  max-width: 36%;
+  margin-bottom: 100px;
+}
+
+.cloudBlock1{
+  font-family: Intro;
+  display: block;
+  float: left;
+  border: 0;
+  background-color: aliceblue;
+  border-radius: 20px;
+  font-size: 60px;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: 10px;
+}
+
+.buttonPhrase{
+  cursor: pointer;
+}
+
+/* ------------------------------------ */
+
+/* -------------- БЛОК 2 -------------- */
+
+#questionnaire{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  width: 50%;
+  padding-top: 100px;
+  height: 80%;
+  overflow: hidden;
+}
+
+.question{
+  margin-left: 0;
+  margin-right: auto;
+  background-color: aliceblue;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.answer{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;  
+  font-family: Intro;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 0;
+  border: 0;
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#nextQuestion{
+  font-family: Intro;
+  font-size: 25px;
+  border: 0;
+  background-color: #ffc2d8;
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%
+}
+
+/* ------------------------------------ */
+
+/* -------------- БЛОК 3 -------------- */
+
+.end{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 300px;
+}
+
+/* ------------------------------------ */
+
+/* -------------- БЛОК 4 -------------- */
+
+.res{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 250px;
+}
+
+.findRes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.id{
+  font-family: Intro;
+  font-size: 30px; 
+  width: 80%;
+  height: calc(2.25rem + 2px);
+  text-align: center;
+  padding: 0.375rem 0.75rem;
+  border: 0.1px solid #993366;
+  border-radius: 20px;
+  line-height: 1.5;
+}
+
+.findResById{
+  font-family: Intro;
+  font-size: 20px; 
+  border-radius: 20px; 
+  margin-top: 10px;
+  border: 0; 
+  background-color: #9933665b; 
+  color: #993366;
+}
+
+/* ------------------------------------ */
+
+/* Настройки */
+a:link{
+  text-decoration: none;
+}
+
+a:visited{
+  text-decoration: none;
+}
+
+button:active, button:focus {
+  outline: none !important;;
+}
+
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+
+::placeholder {
+  color: rgb(216, 215, 215);
+}
